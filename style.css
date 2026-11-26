@@ -1,0 +1,219 @@
+/* Alfred Phone Accessories Website Design */
+
+:root {
+    --primary-color: #142d4e;
+    --secondary-color: #2563eb;
+    --background-color: #f4f7fb;
+    --white-color: #ffffff;
+    --text-color: #263445;
+    --muted: #718096;
+    --border: #e2e8f0;
+    --success-color: #16834a;
+}
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 25px;
+}
+
+/* Headings */
+
+h1 {
+    color: var(--primary-color);
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 26px;
+    margin: 25px 0 15px;
+}
+
+h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+/* Product Section */
+
+.products {
+    display: grid;
+    grid-template-columns:
+repeat(auto-fit, minmax(230px,1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* Product Cards */
+
+.product {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.product img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 19px;
+}
+
+.product p {
+    font-weight: bold;
+    color: var(--success-color);
+    margin: 12px 0;
+}
+
+/* Buttons */
+
+button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Shopping Cart */
+
+#cart-items {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+#cart-items li {
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+#cart-items button {
+    margin: 3px;
+    padding: 7px 12px;
+}
+
+#cart-total {
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+/* Checkout Page */
+
+#checkout-items li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+#checkout-items li {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+#checkout-total {
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+/* Delivery Form */
+
+#checkout-form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    outline: none;
+}
+input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+#checkout-form button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 13px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .product {
+        padding: 12px;
+    }
+
+    .product img {
+        height: 130px;
+    }
+
+    .product h3 {
+        font-size: 16px;
+    }
+
+    #checkout-form {
+        max-width: 100%;
+    }
+}

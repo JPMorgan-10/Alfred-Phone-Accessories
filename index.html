@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred Phone Accessories</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to Alfred Phone Accessories</h1>
+
+    <p>We sell quality phone accessories at affordable prices.</p>
+
+
+
+<h2>Our Products</h2>
+
+<div class="cart-summary">
+    <h3>Shopping Cart</h3>
+
+    <p>Items: <span
+    id="cart-count">0</span></span></p>
+
+    <ul id="cart-items"></ul>
+
+    <h3>Total: &#8358;<span
+    id="cart-total">0</span></h3>
+
+    <button
+    onclick="checkout()">
+    Proceed to Checkout
+    </button>
+    </div>
+
+<div class="products">
+
+<div class="product">
+
+    <h3>Phone Chargers</h3>
+
+    
+<img src="../image/charger.jpg" alt="Phone Chargers">
+
+<p>Price: &#8358;100,000</p>
+
+<button
+onclick="addToCart('Phone Chargers', 100000)">Add to Cart</button>
+
+</div>
+
+<div class="product">
+
+<h3>Power Banks</h3>
+
+<img src="../image/powerbank.jpg" alt="Power Bank">
+
+<p>Price: &#8358;200,000</p>
+
+<button
+onclick="addToCart('Power Banks', 200000)">Add to Cart</button>
+
+</div>
+
+<div class="product">
+
+<h3>Phone Cases</h3>
+
+<img src="../image/phonecase.jpg" alt="Phone Case">
+
+<p>Price: &#8358;50,000</p>
+
+<button
+onclick="addToCart('Phone Cases', 50000)">Add to Cart</button>
+
+</div>
+
+<div class="product">
+
+<h3>Wireless Headphones</h3>
+
+<img src="../image/wirelessheadphone.jpg" alt="Wireless Headphones">
+
+<p>Price: &#8358;500,000</p>
+
+<button
+onclick="addToCart('Wireless Headphones', 500000)">Add to Cart</button>
+
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

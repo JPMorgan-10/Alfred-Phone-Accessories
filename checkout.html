@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Alfred Phone Accessories</title>
+    <link rel="stylesheet"
+href="style.css">    
+</head>
+
+<body>
+
+    <h1>Checkout</h1>
+
+    <h2>Your Order</h2>
+
+    <ul id="checkout-items"></ul>
+
+    <h3>Total: &#8358;<span
+id="checkout-total">0</span></h3>
+
+    <h2>Delivery Information</h2>
+
+    <form id="checkout-form">
+        <input type="text"
+id="customer-name"
+        placeholder="Your Full Name" required>
+
+        <br><br>
+
+        <input type="text"
+id="customer-address"
+        placeholder="Delivery Address" required>
+
+        <br><br>
+
+        <input type="tel"
+id="customer-phone"        
+        placeholder="Phone Number" required>
+
+        <br><br>
+
+        <button
+type="submit">Place Order</button>
+    
+    </form>
+
+    <script src="checkout.js"></script>
+
+</body>
+</html>
